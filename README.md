@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @SaiTama612
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
+- 👀 I’m interested in Data Analysis
+- 🌱 I’m currently learning Data Analysis
+- 💞️ I’m looking to collaborate on any project related to data science.
 - 📫 How to reach me ... <rajs17224@gmail.com>
 
 <!---
