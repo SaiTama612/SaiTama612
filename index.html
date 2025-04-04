@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shubham | Data Analyst</title>
+  <style>
+    :root {
+      --bg-color: #f7f9fc;
+      --text-color: #222;
+      --card-bg: #fff;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+      --card-bg: #1e1e1e;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-top: 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      color: #4a90e2;
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      margin: 1rem 0;
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-thumb {
+      width: 100%;
+      border-radius: 8px;
+      max-height: 180px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+
+    .skills, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .skills span, .contact a {
+      background: var(--card-bg);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      text-decoration: none;
+      color: var(--text-color);
+      transition: background 0.2s;
+    }
+
+    .toggle-theme {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .skills, .contact {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Dark Mode</button>
+
+  <header>
+    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+    <h1>Hi, I'm Shubham 👋</h1>
+    <p>Aspiring Data Analyst | Lifelong Learner</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>About Me</h2>
+      <p>I'm currently diving into the world of Data Analysis. I'm passionate about uncovering insights from data and using tools like Python, Pandas, and Excel to solve real-world problems.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <img src="project1.jpg" alt="Netflix Dataset" class="project-thumb">
+        <h3>Netflix Data EDA</h3>
+        <p>Exploratory Data Analysis on Netflix titles dataset. Uncover trends, genres, and patterns from global releases.</p>
+        <a href="https://github.com/your-username/netflix-eda" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <img src="project2.jpg" alt="COVID Dashboard" class="project-thumb">
+        <h3>COVID-19 Data Dashboard</h3>
+        <p>Interactive dashboard visualizing COVID-19 trends globally using Python and Plotly.</p>
+        <a href="https://github.com/your-username/covid-dashboard" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Excel</span>
+        <span>Matplotlib</span>
+        <span>Seaborn</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact">
+        <a href="https://github.com/your-username" target="_blank">GitHub</a>
+        <a href="mailto:yourname@email.com">Email</a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Shubham. Built with ❤️ using HTML & CSS.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      document.documentElement.setAttribute("data-theme", currentTheme === "dark" ? "light" : "dark");
+    }
+  </script>
+
+</body>
+</html>
